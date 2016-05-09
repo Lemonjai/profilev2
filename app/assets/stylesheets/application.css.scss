@@ -17,3 +17,90 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ $pink: #ea48eb;
+ $white: #ffffff;
+ $grey: #414148;
+
+ @mixin bg_img($url, $size, $position){
+  background-image: url($url);
+  background-size: $size;
+  background-position: $position;
+ }
+
+ .cf:before, .cf:after{
+   content: "";
+   display: table;
+ }
+
+ .cf:after{
+   clear: both;
+ }
+
+ .wrapper{
+   width: 1000px;
+   max-width: 100%;
+   margin: 0 auto;
+ }
+
+ .banner{
+   padding: 5em 0;
+   .logo{
+     float: left;
+   }
+   h1{
+     color: $grey;
+     text-align: right;
+     font-size: 5em;
+     display: inline;
+     float: right;
+     margin: 0;
+   }
+ }
+
+ .logo{
+   background: $pink;
+   border-radius: 100%;
+   width: 75px;
+   height: 75px;
+   line-height: 75px;
+   text-align: center;
+   color: $white;
+   font-size: 1.1em;
+ }
+
+ footer{
+  padding: 3em 0;
+  .logo{
+    float: left;
+    margin: 0;
+  }
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding-top: 1em;
+    li{
+      display: inline;
+      float: left;
+      margin-left: 4em;
+      .title{
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .75em;
+        display: block;
+        padding-bottom: .5em;
+      }
+      .links{
+        font-size: 1.75em;
+        a{
+          color: $grey;
+          text-decoration: none;
+          &:hover{
+            color: $pink;
+            }
+          }
+        }
+      }
+    }
+  }
