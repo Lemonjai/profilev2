@@ -12,6 +12,10 @@ $grey: #414148;
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
 .cf:before, .cf:after{
   content: "";
   display: table;
@@ -67,6 +71,7 @@ $grey: #414148;
 
 .work{
   background: $grey;
+  width: 100%;
   padding: 5em 0;
   .card{
     background: $white;
@@ -97,19 +102,19 @@ $grey: #414148;
   }
 
   .card_1{
-    @include bg_img('../images/keyboard.jpg', 100%, 100% 100%);
+    @include bg_img('keyboard.jpg', 100%, 100% 100%);
   }
 
   .card_2{
-    @include bg_img('../images/stackbooks.jpg', 100%, 100% 100%);
+    @include bg_img('stackbooks.jpg', 100%, 100% 100%);
   }
 
   .card_3{
-    @include bg_img('../images/projects.jpg', 100%, 100% 100%);
+    @include bg_img('projects.jpg', 100%, 100% 100%);
   }
 
   .card_4{
-    @include bg_img('../images/road.jpg', 100%, 100% 100%);
+    @include bg_img('road.jpg', 100%, 100% 100%);
   }
 
   .card_inner{
