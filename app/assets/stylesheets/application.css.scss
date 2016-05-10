@@ -1,3 +1,22 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap-material-design
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 $pink: #ea48eb;
 $white: #ffffff;
 $grey: #414148;
@@ -164,6 +183,37 @@ body{
   }
 }
 
+#main_navigation{
+  padding: 2.5em 5%;
+  border-bottom: 1px solid #E9E9E9;
+
+  .name{
+    font-weight: 700;
+    font-size: .8em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 2px solid #E9E9E9;
+    padding: 1rem;
+    text-decoration: none;
+    color: #424652;
+    float: left;
+  }
+
+  nav{
+    padding-top: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  nav a{
+
+    color:#424652;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 2rem;
+  }
+}
+
 footer{
   padding: 3em 0;
   border-top: 1px solid #E9E9E9;
@@ -252,6 +302,9 @@ input[type="submit"]{
   font-size: 1em;
   color: #424652;
   text-decoration: none;
+  &:hover{
+    color: $pink;
+  }
 }
 
 @media screen and (max-width: 800px){

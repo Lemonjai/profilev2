@@ -12,7 +12,13 @@
 <body>
 
   <%= render 'layouts/banner' %>
+
+  <% if !current_page?(root_path)%>
+    <%= render 'layouts/navbar' %>
+  <% end %>
+
   <%= yield %>
+  
   <%= render 'layouts/footer' %>
 
 </body>
