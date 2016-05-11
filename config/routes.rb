@@ -2,11 +2,15 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
+  resources :posts
+  resources :projects
   resources :contacts, only: [:new, :create]
 
   get '/contact' => 'contacts#new'
 
   get '/resources' => 'pages#resources'
+
+  get '/projects' => 'projects#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
