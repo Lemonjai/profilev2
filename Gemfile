@@ -28,6 +28,10 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-material-design'
 # Mail form gem
 gem 'mail_form'
+# Red carpet
+gem 'redcarpet'
+# Pygment gem
+gem 'pygments.rb'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
